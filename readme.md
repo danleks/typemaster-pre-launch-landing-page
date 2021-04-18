@@ -7,7 +7,7 @@ Features:
 
 Stack:
 
-- JavaScript ([Reef.js](https://reefjs.com)
+- JavaScript ([Reef.js](https://reefjs.com))
 - HTML
 - CSS (Sass)
 - NPM, Webpack
