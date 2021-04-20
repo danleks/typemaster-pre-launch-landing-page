@@ -1,4 +1,7 @@
-import Heading from './components/Heading';
+import './styles/main.sass';
+import Navigation from './components/Navigation/Navigation';
+import Hero from './components/Hero/Hero';
+import Description from './components/Description/Description';
 
 const App = new Reef('#app', {
     data: {
@@ -6,10 +9,14 @@ const App = new Reef('#app', {
     },
     template: ({ name }) => {
         return `
-            <h1 id="heading"></h1>
+            <my-navigation data-component-name="navigation"></my-navigation>
+            <my-hero data-component-name="hero"></my-hero>
+            <my-description data-component-name="description"></my-description>
         `
     }
 });
 
-App.attach([Heading]);
+
+
+App.attach([Navigation, Hero, Description]);
 export default App;
