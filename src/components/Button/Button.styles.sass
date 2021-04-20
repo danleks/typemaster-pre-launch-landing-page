@@ -1,0 +1,25 @@
+=btnCustomStyles($bgColor, $fontColor, $hoverColor)
+    background-color: $bgColor
+    color: $fontColor
+    &:hover
+        color: var(--white)
+        background-color: $hoverColor
+
+.button
+    width: 15.1rem
+    height: 4.8rem
+    padding: 11px 14px
+    border: none
+    border-radius: 8px
+    font-size: 16px
+    font-weight: bold
+    line-height: 2.6rem
+    text-transform: uppercase
+    cursor: pointer
+    transiton: .3s background-color ease
+
+.grey
+    +btnCustomStyles(var(--grey), var(--blue), var(--blue))
+
+.orange
+    +btnCustomStyles(var(--orange), var(--white), var(--lightOrange))
