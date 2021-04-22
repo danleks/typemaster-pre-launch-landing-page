@@ -1,19 +1,37 @@
 .description
     display: flex
-    gap: 2.4rem
+    flex-direction: column
+    gap: 7.5rem
+    padding: 0 2.4rem
     margin-top: 2.4rem
     margin-bottom: 7.5rem
 
-.imgContainer
+.description__container
+    display: flex
+    gap: 2.4rem
+
+    &:last-child
+        align-items: center
+        flex-direction: column
+
+.description__title
+    width: 25.5rem
+    font-size: 3.2rem
+    font-weight: 900
+    line-height: 36px
+    text-align: center
+    text-transform: uppercase
+
+.imgContent
     img
         display: block
         width: 100%
         border-radius: 2rem
 
-.imgContainer:first-child
+.imgContent:first-child
     img
         border-top-left-radius: 0
         border-bottom-left-radius: 0
 
-.imgContainer:last-child
+.imgContent:last-child
     padding-right: 2.4rem
