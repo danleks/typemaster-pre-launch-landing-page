@@ -10,7 +10,7 @@ const Hero = new Reef('[data-component-name="hero"]', {
             <div class="hero">
                 <div class="hero__content">
                     <h1>Typemaster Keyboard</h1>
-                    <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+                    <p class="main-text">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
                     <ul>
                         <li>
                             <my-button data-component-name="hero-btn" data-button-style="orange">Pre-order now</my-button>
