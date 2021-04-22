@@ -5,7 +5,8 @@ import Button from '../Button/Button';
 const buttonComponent = new Reef('[data-component-name="nav-button"]', {template: Button});
 
 const Navigation = new Reef('[data-component-name="navigation"]', {
-    template: () => {       
+    template: () => {      
+        console.log(Logo); 
         return `
             <nav>
                 <ul class="navigation">
