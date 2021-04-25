@@ -11,11 +11,13 @@ const App = new Reef('#app', {
     },
     template: ({ name }) => {
         return `
-            <my-navigation data-component-name="navigation"></my-navigation>
-            <my-hero data-component-name="hero"></my-hero>
-            <my-description data-component-name="description"></my-description>
-            <my-features data-component-name="features"></my-features>
-            <my-footer data-component-name="footer"></my-footer>
+            <div class="wrapper">
+                <my-navigation data-component-name="navigation"></my-navigation>
+                <my-hero data-component-name="hero"></my-hero>
+                <my-description data-component-name="description"></my-description>
+                <my-features data-component-name="features"></my-features>
+                <my-footer data-component-name="footer"></my-footer>
+            </div>
         `
     }
 });
