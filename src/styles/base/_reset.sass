@@ -17,6 +17,28 @@ html
 body
     font-size: 1.6rem
 
+    @media(min-width: 1440px)
+        &::before
+            content: ''
+            position: absolute
+            top: 95rem
+            left: 0
+            width: 13.5rem
+            height: 23.6rem
+            border-top-right-radius: 2rem
+            border-bottom-right-radius: 2rem
+            background-color: var(--grey)
+        &::after
+            content: ''
+            position: absolute
+            top: 19.6rem
+            right: 0
+            width: 13.5rem
+            height: 24rem
+            border-top-left-radius: 2rem
+            border-bottom-left-radius: 2rem
+            background-color: var(--grey)
+
 *, *:before, *:after
     box-sizing: inherit
     padding: 0
