@@ -1,6 +1,9 @@
 import './Hero.styles.sass';
 import Button from '../Button/Button';
-import ImgKeyboard from '../../assets/mobile/image-keyboard.jpg';
+import mobileImgKeyboard from '../../assets/mobile/image-keyboard.jpg';
+import tabletImgKeyboard from '../../assets/tablet/image-keyboard.jpg';
+import desktopImgKeyboard from '../../assets/desktop/image-keyboard.jpg';
+
 
 const buttonComponent = new Reef('[data-component-name="hero-btn"]', {template: Button});
 
@@ -21,7 +24,14 @@ const Hero = new Reef('[data-component-name="hero"]', {
                     </ul>
                 </div>
                 <div class="hero__image">
-                    <img src=${ImgKeyboard} alt="keyboard"/>
+                    <img src="${mobileImgKeyboard}"
+                        srcset="${mobileImgKeyboard} 744w, ${tabletImgKeyboard} 956w, ${desktopImgKeyboard} 1080w"
+                        sizes="(min-width: 1440px) 1080px,
+                            (min-width: 768px) 956px,
+                            (min-width: 320px) 370px,
+                        "
+                        alt="keyboard"
+                    />
                 </div>
             </div>
         `
